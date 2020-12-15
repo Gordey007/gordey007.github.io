@@ -4,11 +4,11 @@
     <!-- Required meta tags -->
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+		<link rel="stylesheet" href="assets/css/gallery/gallery2.css">
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-	    <title>Hello, world!</title>
+	    <title>Acknowledgments</title>
  	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -52,53 +52,62 @@
 		</nav>
 		<br>
 		<br>
-		<div class="row">
-			<div class="col-sm-6">
-				<div class="card" style="width: 18rem;">
-					<img src="assets/img/acknowledgments/2.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<p class="card-text">Matrix CTF</p>
-					</div>
-				</div>
+		<div class="container">
+			<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="assets/img/acknowledgments/2.jpg" style="width:50%">
 			</div>
-			<div class="col-sm-6">
-				<div class="card" style="width: 18rem;">
-					<img src="assets/img/acknowledgments/5.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<p class="card-text">Первый краевой чемпионат поматематически и логическим играм</p>
-					</div>
-				</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="assets/img/acknowledgments/5.jpg" style="width:50%">
 			</div>
-			<div class="col-sm-6">
-				<div class="card" style="width: 18rem;">
-					<img src="assets/img/acknowledgments/6.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<p class="card-text">Профориентационное мероприятие.jpg</p>
-					</div>
-				</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="assets/img/acknowledgments/3.jpg" style="width:70%">
 			</div>
-			<div class="col-sm-6">
-				<div class="card" style="width: 18rem;">
-					<img src="assets/img/acknowledgments/1.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<p class="card-text">HumanCTF</p>
-					</div>
-				</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="assets/img/acknowledgments/6.jpg" style="width:70%">
 			</div>
-			<div class="col-sm-6">
-				<div class="card" style="width: 18rem;">
-					<img src="assets/img/acknowledgments/3.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<p class="card-text">Межвузовкий студенческий командный чемпионат по математике под знаком пи - 2018 г.</p>
-					</div>
-				</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="assets/img/acknowledgments/1.jpg" style="width:70%">
 			</div>
-			<div class="col-sm-6">
-				<div class="card" style="width: 18rem;">
-					<img src="assets/img/acknowledgments/4.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-						<p class="card-text">Межвузовкий студенческий командный чемпионат по математике под знаком пи - 2019 г</p>
-					</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="assets/img/acknowledgments/4.jpg" style="width:70%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<div class="row">
+				<div class="column">
+					<img class="demo cursor" src="assets/img/acknowledgments/2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Matrix CTF">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="assets/img/acknowledgments/5.jpg" style="width:100%" onclick="currentSlide(2)" alt="Первый краевой чемпионат поматематически и логическим играм">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="assets/img/acknowledgments/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Межвузовкий студенческий командный чемпионат по математике под знаком пи - 2018 г.">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="assets/img/acknowledgments/6.jpg" style="width:100%" onclick="currentSlide(4)" alt="Профориентационное мероприятие">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="assets/img/acknowledgments/1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Международный конкурс по информационной безопасности HumanCTF">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="assets/img/acknowledgments/4.jpg" style="width:100%" onclick="currentSlide(6)" alt="Межвузовкий студенческий командный чемпионат по математике под знаком пи - 2019 г.">
 				</div>
 			</div>
 		</div>
@@ -110,5 +119,35 @@
 	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+				captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
 	</body>
 </html>
